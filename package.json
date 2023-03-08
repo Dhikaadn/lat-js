@@ -1,0 +1,18 @@
+{
+  "name": "latih",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node index.js"
+  },
+  "author": "andhika",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}
