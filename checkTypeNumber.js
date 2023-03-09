@@ -10,4 +10,4 @@ const checkTypeNumber = (givenNumber) =>{
     }
 }
 
-module.exports = checkTypeNumber
+module.exports = checkTypeNumber 
