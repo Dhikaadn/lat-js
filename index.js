@@ -5,6 +5,7 @@ const isValidPassword = require('./isValidPassword.js')
 const getSplitName = require('./getSplitName.js')
 const getAngkaTerbesarKedua = require('./getAngkaTerbesarKedua.js')
 const getTotalPenjualan = require('./getTotalPenjualan.js')
+const getInfoPenjualan = require('./getInfoPenjualan.js')
 const kalimat1 = "Andini sangat mencintai kamu selamanya"
 const myEmail = "111202012870@mhs.dinus.ac.id"
 const myPass = "aaNdhik55"
@@ -37,6 +38,47 @@ const dataPenjualanPakAldi = [
     }
 ]
 
+const dataPenjualanNovel = [
+  {
+    idProduct: 'BOOK002421',
+    namaProduk: 'Pulang - Pergi',
+    penulis: 'Tere Liye',
+    hargaBeli: 60000,
+    hargaJual: 86000,
+    totalTerjual: 150,
+    sisaStok: 17
+  },
+  {
+    idProduct: 'BOOK002351',
+    namaProduk: 'Selamat Tinggal',
+    penulis: 'Tere Liye',
+    hargaBeli: 75000,
+    hargaJual: 103000,
+    totalTerjual: 171,
+    sisaStok: 20
+  },
+  {
+    idProduct: 'BOOK002941',
+    namaProduk: 'Garis Waktu',
+    penulis: 'Fiersa Besari',
+    hargaBeli: 67000,
+    hargaJual: 99000,
+    totalTerjual: 213,
+    sisaStok: 5
+  },
+  {
+    idProduct: 'BOOK002941',
+    namaProduk: 'Laskar Pelangi',
+    penulis: 'Andrea Hirata',
+    hargaBeli: 55000,
+    hargaJual: 68000,
+    totalTerjual: 20,
+    sisaStok: 56
+  }
+];
+
+
+
 console.log(changeWord("Andini", "boli boli", kalimat1))
 console.log(checkTypeNumber({}))
 console.log(checkEmail(myEmail))
@@ -44,3 +86,4 @@ console.log(isValidPassword(myPass))
 console.log(getSplitName(myName))
 console.log(getAngkaTerbesarKedua(myList))
 console.log(getTotalPenjualan(dataPenjualanPakAldi))
+console.log(getInfoPenjualan(dataPenjualanNovel))
