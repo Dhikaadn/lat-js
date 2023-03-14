@@ -4,7 +4,8 @@ function getInfoPenjualan(dataPenjualanNovel){
     let totalModal = 0
     let maks = 0
     let produk
-    let penulis
+    let penulis = []
+    let countPenulis = 1
     dataPenjualanNovel.forEach(total=>{
         //totalKeuntungan
         untung = (total.hargaJual - total.hargaBeli)*total.totalTerjual
@@ -20,9 +21,21 @@ function getInfoPenjualan(dataPenjualanNovel){
         }
 
         //penulisTerlaris
+        let countPenulis = 0
+        dataPenjualanNovel.forEach(totalChild=>{
+            if(totalChild.penulis==total.penulis){
+                countPenulis++
+            }
+        })
+        let terjual = countPenulis*total.totalTerjual
         
+        penulis.push(terjual)
+
+
     });
-    return produk
+    return penulis
 }
+
+
 
 module.exports = getInfoPenjualan

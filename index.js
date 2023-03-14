@@ -74,6 +74,15 @@ const dataPenjualanNovel = [
     hargaJual: 68000,
     totalTerjual: 20,
     sisaStok: 56
+  },
+  {
+    idProduct: 'BOOK002940',
+    namaProduk: 'Laskar Awan',
+    penulis: 'Andrea Hirata',
+    hargaBeli: 55000,
+    hargaJual: 68000,
+    totalTerjual: 20,
+    sisaStok: 56
   }
 ];
 
