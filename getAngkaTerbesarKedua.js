@@ -2,7 +2,7 @@ function getAngkaTerbesarKedua(dataNumbers){
     let nilaiMaks
     for(let i=0; i<dataNumbers.length; i++){
         if(i == 0){ 
-            nilaiMaks = dataNumbers[i]
+            nilaiMaks = dataNumbers[i] 
         }else{
             if(dataNumbers[i] > nilaiMaks)
                 {
